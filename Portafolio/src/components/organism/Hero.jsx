@@ -43,7 +43,7 @@ export default function Hero() {
 
       {/* ===== DESKTOP (≥ lg) ===== */}
       <div className="hidden lg:flex lg:flex-row lg:min-h-screen">
-        <div className="flex-1 bg-gray-300 clip-diagonal flex flex-col justify-center items-start px-16 z-10">
+        <div className="flex-1 bg-[#D7D7D7] clip-diagonal flex flex-col justify-center items-start px-16 z-10">
           <TextBlocks />
           <div className="my-6">
             <SocialLinks />

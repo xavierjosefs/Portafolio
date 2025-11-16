@@ -16,7 +16,7 @@ export default function NavLinks({ direction = "row", onItemClick }) {
         <li key={l.href}>
           <a
             href={l.href}
-            className="block py-2"
+            className="block py-2 border border-black rounded-full px-3 hover:bg-white hover:text-black hover:scale-105 transition-all duration-700"
             onClick={onItemClick}
           >
             {l.label}
@@ -27,7 +27,7 @@ export default function NavLinks({ direction = "row", onItemClick }) {
       <li>
         <a
           href="#contact"
-          className="border border-white bg-white text-black rounded-full px-3 py-1"
+          className="border rounded-full px-3 py-3  hover:bg-white hover:text-black hover:scale-110 transition-all duration-700"
           onClick={onItemClick}
         >
           Contact Me
