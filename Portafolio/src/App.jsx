@@ -2,7 +2,7 @@ import NavBar from './components/organism/NavBar';
 import Hero from './components/organism/Hero';
 import Slogan from './components/organism/Slogan';
 import AboutMe from './components/organism/AboutMe';
-import Areas from './components/molecules/Areas';
+import SkillsMarquee from './components/organism/SkillsMarquee';
 
 export default function App() {
   return (
@@ -11,6 +11,7 @@ export default function App() {
         <Hero />
         <Slogan />
         <AboutMe />
+        <SkillsMarquee />
       </>
       
   );
