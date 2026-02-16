@@ -5,7 +5,7 @@ import {SiJavascript, SiTypescript, SiReact, SiNodedotjs, SiExpress, SiCplusplus
 export default function SkillsMarquee() {
     
     const skills = [
-    { name: "JavaScript", icon: SiJavascript, color: "text-[#F7DF1E]" },
+    { name: "JavaScript", icon: SiJavascript, color: "text-[#F0DB4F]" },
     { name: "TypeScript", icon: SiTypescript, color: "text-[#3178C6]" },
     { name: "React", icon: SiReact, color: "text-[#61DAFB]" },
     { name: "Node.js", icon: SiNodedotjs, color: "text-[#3C873A]" },
@@ -28,21 +28,36 @@ export default function SkillsMarquee() {
     
     return (
 
-        <section className="bg-[#D7D7D7]">
-            <div className="flex justify-center items-center pt-20">
-                <h1 className="inline-block px-11 py-4 border-8 border-black font-montserrat text-3xl font-semibold text-center">
+        <section id="skills" className="bg-[#D7D7D7]">
+            <div className="flex justify-center items-center pt-20 px-4">
+                <h1
+                    className="
+                    inline-block 
+                    text-center 
+                    font-montserrat font-semibold
+                    border-4 border-black md:border-8
+                    px-4 py-2 sm:px-6 sm:py-3 md:px-11 md:py-4
+                    text-xl sm:text-2xl md:text-3xl
+                    "
+                >
                     SKILLS & TECHNOLOGIES
                 </h1>
             </div>
+
             
 
-            <Marquee speed={100} gradient={false} className="bg-[#D7D7D7] py-12">
-                <div className="flex space-x-8">
-                    {skills.map(s => {
-                    return <SkillCard key={s.name} skill={s} className={s.color}/>;
-                    })}
+            <Marquee
+            speed={100}
+            gradient={false}
+            className="bg-[#D7D7D7] py-6 sm:py-8 md:py-12"
+            >
+                <div className="flex space-x-4 sm:space-x-6 md:space-x-8">
+                    {skills.map((s) => (
+                    <SkillCard key={s.name} skill={s} />
+                    ))}
                 </div>
             </Marquee>
+
        </section>
        
     );

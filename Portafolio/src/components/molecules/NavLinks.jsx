@@ -1,6 +1,6 @@
 export default function NavLinks({ direction = "row", onItemClick }) {
   const links = [
-    { label: "About me", href: "#about" },
+    { label: "About me", href: "#about-me" },
     { label: "Skills", href: "#skills" },
     { label: "Projects", href: "#projects" },
   ];

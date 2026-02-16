@@ -5,9 +5,16 @@ export default function AboutMe() {
     <section id="about-me" className="bg-[#D7D7D7] pt-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
             <div className="flex justify-center">
-            <h1 className="inline-block px-11 py-4 border-8 border-black font-montserrat text-3xl font-semibold">
-                ABOUT ME
-            </h1>
+                <h1 className="
+                    inline-block 
+                    text-center 
+                    font-montserrat font-semibold
+                    border-4 border-black md:border-8
+                    px-4 py-2 sm:px-6 sm:py-3 md:px-11 md:py-4
+                    text-xl sm:text-2xl md:text-3xl
+                    ">
+                    ABOUT ME
+                </h1>
             </div>
 
             <div className="space-y-4 leading-relaxed pt-12 font-sans text-lg">
