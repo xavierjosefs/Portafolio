@@ -2,6 +2,8 @@
 import ProjectCard from "../molecules/ProjectCard";
 import fastNotes from "../../assets/images/fast-notes.jpg";
 import permicloud from "../../assets/images/permicloud.png";
+import credix from "../../assets/images/credix.png";
+import sigmedic from "../../assets/images/sigmedic.png";
 
 
 export default function Projects() {
@@ -19,8 +21,21 @@ export default function Projects() {
           img: permicloud, 
           demo: "",
           code: "https://github.com/xavierjosefs/sgc-productos-controlados"
+        },
+        {
+          title: "Credix",
+          text: "Credix is a comprehensive credit management platform designed to streamline the lending process, offering real-time credit assessment, automated approval workflows, and detailed reporting capabilities.",
+          img: credix,
+          demo: "",
+          code: "https://github.com/xavierjosefs/Credix"
+        },
+        {
+          title: "Sigmedic",
+          text: "Sigmedic is a healthcare management system designed to streamline patient data management, appointment scheduling, and medical record keeping, featuring a user-friendly interface and robust security measures.",
+          img: sigmedic,
+          demo: "",
+          code: "https://github.com/victorgarcesg/sigmedic"
         }
-        
     ];
 
 
